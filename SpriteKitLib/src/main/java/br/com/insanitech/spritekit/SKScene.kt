@@ -17,7 +17,7 @@ open class SKScene : SKEffectNode {
 
     var scaleMode: SKSceneScaleMode = SKSceneScaleMode.AspectFill
 
-    var backgroundColor: SKColor = SKColor(0.15f, 0.15f, 0.15f, 1.0f)
+    var backgroundColor: SKColor = SKColor(0.9f, 0.1f, 0.7f, 1.0f)
         set(value) { field.color.assignByValue(value.color) }
 
     var view: SKView? = null
