@@ -144,6 +144,8 @@ internal open class GL10Renderer(drawer: GLDrawer) : GLRenderer(drawer) {
         GLES10.glBlendFunc(GLES10.GL_SRC_ALPHA, GLES10.GL_ONE_MINUS_SRC_ALPHA)
 
         GLES10.glColorPointer(4, GLES10.GL_FLOAT, 0, color.buffer)
+        
+        GLES10.glColor4f(1f, 1f, 1f, factor);
 
         GLES10.glEnable(GLES10.GL_TEXTURE_2D)
         GLES10.glBindTexture(GLES10.GL_TEXTURE_2D, texture.glTexture)
